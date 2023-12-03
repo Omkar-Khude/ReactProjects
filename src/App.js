@@ -34,12 +34,12 @@ function App() {
   return (
     <>
     <BrowserRouter>
-        <Navbar title="TextUtils" mode={mode} toggleMode={toggleMode}/>
+        <Navbar title="TextCraftHub" mode={mode} toggleMode={toggleMode}/>
         <Alert alert={alert}/>
         <div className="container my-3">
           <Routes>
           <Route exact path="/about" element={<About mode={mode}/>}></Route>
-          <Route exact path="/" element={<TextBox showAlert={showAlert} heading="Enter Text to analyze " mode={mode}/>}></Route>
+          <Route exact path="/" element={<TextBox showAlert={showAlert} heading="Unleash the Power of Words with Our Online Text Manipulation Tools - Text formatting, Text transformation, Character count, Word count, Remove extra spaces. " mode={mode}/>}></Route>
           </Routes>
         </div>
       </BrowserRouter>

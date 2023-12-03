@@ -39,8 +39,8 @@ export default function TextBox(props) {
   return (
     <>
     <div className="container" style={{color:props.mode==='light'?'black':'white'}}>
-<h1>{props.heading}</h1>
-<div className="mb-3">
+<h2>{props.heading}</h2>
+<div className="mb-3 my-3">
 <textarea className="form-control" id="exampleFormControlTextarea1" value={text} onChange={handleOnChange} style={{backgroundColor:props.mode==='light'?'white':'#181631c2', color:props.mode==='light'?'black':'white'}} rows="8"></textarea>
 </div>
 <button disabled={text.length===0} className="btn btn-primary mx-2 my-2" onClick={handleUpClick}>Convert to uppercase</button>
@@ -58,4 +58,5 @@ export default function TextBox(props) {
 </div>
 </>
   )
+  
 }
